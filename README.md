@@ -1,4 +1,7 @@
 
+## Full sample
+
+https://github.com/hyperledger/fabric-samples
 
 # Usage
 
