@@ -18,7 +18,7 @@ echo "-----------> BASE_VERSION = $VERSION"
 cd $BASE_FOLDER/fabric-samples || exit
 curl https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric-$VERSION-stable/$MARCH-$ARCH.$VERSION-stable-$COMMIT/hyperledger-fabric-$VERSION-stable-$MARCH-$ARCH.$VERSION-stable-$COMMIT.tar.gz | tar xz
 
-cd first-network || exit
+cd network || exit
 export PATH=gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH
 
 err_Check() {

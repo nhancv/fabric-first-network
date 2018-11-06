@@ -11,7 +11,7 @@ https://github.com/hyperledger/fabric-samples
 Ex: 
 ./scripts/bootstrap.sh 1.2.1 1.2.1 1.2.1
 
-cd first-network
+cd network
 ./byfn.sh generate
 ./byfn.sh up
 
@@ -36,13 +36,13 @@ B = 200 + 10 = 210
 STEP 1: Generating certs and genesis block for channel 'mychannel' with CLI timeout of '10' seconds and CLI delay of '3' seconds
 
 ##### Generate certificates using cryptogen tool #########
-/Volumes/Data/Docs/Blockchain/HyperledgerFabric/fabric-samples/first-network/../bin/cryptogen
+../bin/cryptogen
 + cryptogen generate --config=./crypto-config.yaml
 org1.example.com
 org2.example.com
 
 #########  Generating Orderer Genesis block ##############
-/Volumes/Data/Docs/Blockchain/HyperledgerFabric/fabric-samples/first-network/../bin/configtxgen
+../bin/configtxgen
 + configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block
 
 ### Generating channel configuration transaction 'channel.tx' ###
